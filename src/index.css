@@ -1,0 +1,50 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN COLOR THEME */
+:root {
+  --bg-dark: #0b0c10;
+  --bg-card: #1f2833;
+  --text-light: #ffffff;
+  --neon-primary: #a259ff;
+  --neon-secondary: #00e5ff;
+
+  font-family: Inter, system-ui, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* SCROLLBAR (NEON STYLE) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--neon-primary), var(--neon-secondary));
+  border-radius: 4px;
+}
+
+/* BODY CONFIG */
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* DEFAULT LINK STYLE */
+a {
+  color: var(--neon-secondary);
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* Improve text rendering */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
